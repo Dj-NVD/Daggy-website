@@ -8,18 +8,20 @@
             margin: 0;
             padding: 0;
             height: 100%;
+            display: flex;
+            justify-content: center;  /* Horizontaal centreren */
+            align-items: center;      /* Verticaal centreren */
+            background-color: white;  /* Achtergrondkleur wit */
         }
         img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* Past zich aan zonder vervorming */
-            display: block;
+            max-height: 100vh;  /* Volledige hoogte benutten */
+            max-width: 100%;    /* Voorkom dat de afbeelding te breed wordt */
+            height: auto;
+            width: auto;
         }
     </style>
 </head>
-
-
 <body>
-    <img src="afbeelding_index.jpg" alt="">
+    <img src="afbeelding_index.jpg" alt="Portretfoto">
 </body>
 </html>
