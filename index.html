@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,20 +9,45 @@
             margin: 0;
             padding: 0;
             height: 100%;
+            text-align: center; /* Centreert tekst */
+            background-color: white; /* Achtergrondkleur */
+            font-family: Arial, sans-serif;
+        }
+        .container {
             display: flex;
-            justify-content: center;  /* Horizontaal centreren */
-            align-items: center;      /* Verticaal centreren */
-            background-color: white;  /* Achtergrondkleur wit */
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .message {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
         }
         img {
-            max-height: 100vh;  /* Volledige hoogte benutten */
-            max-width: 100%;    /* Voorkom dat de afbeelding te breed wordt */
+            max-height: 80vh; /* Zorgt ervoor dat er ruimte is voor de tekst */
+            max-width: 100%;
             height: auto;
             width: auto;
         }
     </style>
 </head>
+
+<!--Allerliefste Dagmar, dit domein heb ik in 2023 voor jou gekocht, voor verschillende doeleinden
+op Maandag 11 November 2024 is onze relatie ten einde gekomen nadat dingen niet zo goed gingen en er fouten gemaakt zijn.
+dit domein is nogsteeds in mijn bezit, en als je ooit het wilt gebruiken of overkopen mag je mij altijd een berichtje sturen
+
+Veel liefs
+Noah Van Dijck -->
+
 <body>
-    <img src="afbeelding_index.jpg" alt="Portretfoto">
+    <div class="container">
+        <div class="message">
+            Just a memory.<br>
+            Website temporarily unavailable
+        </div>
+                <img src="afbeelding_index.jpg" alt="Afbeelding">
+    </div>
 </body>
 </html>
